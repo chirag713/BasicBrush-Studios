@@ -17,7 +17,7 @@ export async function POST(request) {
         console.log(name, email, phoneno, address, service, timeperiod, amount);
 
         const payment_capture = 1; // Use 1 to indicate that payment should be captured automatically
-        const amountInPaisa = count * 100; // amount in paisa. In our case it's INR 1
+        const amountInPaisa = amount * 100; // amount in paisa. In our case it's INR 1
         const currency = "INR";
         const options = {
             amount: amountInPaisa.toString(),
